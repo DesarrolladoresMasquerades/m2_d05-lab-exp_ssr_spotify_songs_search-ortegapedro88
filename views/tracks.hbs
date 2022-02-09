@@ -1,0 +1,21 @@
+<div>
+
+<h1>Tracks</h1>
+
+<ul>
+
+{{#each tracks}}
+
+<li><h2>{{this.name}}</h2></li>
+
+{{#if this.preview_url}}
+
+<audio controls="controls" src={{this.preview_url}}> audio track </audio>
+
+{{/if}}
+
+{{/each}}
+
+</ul>
+
+</div>
